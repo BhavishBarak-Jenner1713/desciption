@@ -1,0 +1,199 @@
+h1 {
+    color: rgb(238, 143, 98);
+    text-align: center;
+    text-shadow: 4px 3px 5px rgb(126, 26, 26);
+}
+/* remember that since we havent specified any special h1 all h1 changes color to blue */
+.upperh3 {
+    color: red;
+}
+/* multiple tags can have same class but no 2 tags can have same id */
+#chodu {
+    color:gold;
+}
+#popi {
+    border:20px solid rgb(193, 255, 47);
+    margin-bottom: 50px;
+    padding: 50px;
+
+}
+/* when we add the margin of each part individually then it follows clockwise rule ie top right bottm left Also the syntax of padding and margins is similar as both of them are responsible for inserting spaces inside or outside the borders */
+.box{
+    display: inline-block;
+    background: greenyellow;
+    height: 300px;
+    width: 300px;
+    margin: 10px 5px;
+}
+nav {
+    /* background-image: linear-gradient(to right, black, rgb(99, 96, 96), rgb(248, 242, 242)); */
+    text-align: center;
+    /* padding: 20px; */
+
+
+}
+nav li {
+    display: inline-block;
+    text-shadow: 4px 3px 5px rgb(7, 7, 10);
+}
+nav ul {
+    list-style: none;
+}
+#momi {
+    border-radius: 50%;
+    box-shadow: 20px 15px 20px gray;
+
+
+}
+#pop {
+    border-radius: 50%;
+    box-shadow: 20px 20px 20px grey;
+}
+html {
+    background-color: rgba(176, 236, 238, 0.699);
+}
+#by {
+    text-align: center;
+    color: brown;
+    text-shadow: 4px 3px 5px rgb(48, 8, 8);
+}
+#parentbox {
+    border: 5px solid blueviolet;
+    margin: 20px;
+    /* display: flex;  */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    padding: 100px;
+
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#box1 {
+    animation-name: fade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+#box2 {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 5px;
+    background-image: radial-gradient(circle, green, blue, pink, orange, black);
+}
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(0.5);}
+}
+#box3 {
+    animation-name: getBigger;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    background-color: crimson;
+    border-radius: 50%;
+}
+@keyframes color {
+    0% {background-color: rgb(243, 240, 233);}
+    25% {background-color: rgb(236, 206, 129);}
+    50% {background-color: rgb(228, 166, 9);}
+    75% {background-color: rgb(87, 68, 20);}
+    100% {background-color: rgb(27, 21, 6);}
+}
+#box4 {
+    animation: color 4s infinite forwards;
+}
+@keyframes move {
+    0% {left:0px; top:0px;}
+    25% {left:200px; top:0px;}
+    50% {left:200px; top:200px;}
+    75% {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+#box5 {
+    position: relative;
+    background-color: darkgreen;
+    animation: move 5s infinite;
+}
+/* html {
+    background-image: linear-gradient(to right, rgb(148, 144, 144),rgb(56, 54, 54), black);
+} */
+form input, textarea, button  {
+    display: block;
+    margin: 30px;
+}
+.border {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    padding: 40px;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(3, [row] auto );
+    background-color: #fff;
+    color: #444;
+}
+
+.Box {
+    
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.c {
+    grid-column: col 3;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+}
+.d {
+    grid-column: col / span  2 ;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.e {
+    grid-column: col 4 / span  2;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 1 / span 5;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+}
